@@ -12,6 +12,25 @@
             text-align: center;
             vertical-align: center;
         }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -21,6 +40,21 @@
 
     <!-- Countdown to a specific date and time -->
     <div id="countdown"></div>
+
+    <table>
+        <tr>
+            <td id="countdown-days">Data 1</td>
+            <td id="countdown-hours">Data 2</td>
+            <td id="countdown-minutes">Data 3</td>
+            <td id="countdown-seconds">Data 4</td>
+        </tr>
+        <tr>
+            <td>Days</td>
+            <td>Hours</td>
+            <td>Minutes</td>
+            <td>Seconds</td>
+        </tr>
+    </table>
 
     <script>
         // Set the target date and time for the countdown (format: year, month (0-based), day, hour, minute, second)
@@ -38,7 +72,10 @@
             const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
             // Display the countdown
-            document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            document.getElementById('countdown-days').innerHTML = `${days}`;
+            document.getElementById('countdown-hours').innerHTML = `${hours}`;
+            document.getElementById('countdown-minutes').innerHTML = `${minutes}`;
+            document.getElementById('countdown-seconds').innerHTML = `${seconds}`;
         }
 
         // Initial call to update the countdown
