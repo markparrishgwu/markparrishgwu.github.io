@@ -36,14 +36,14 @@ table {
 }
 
 tr {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     justify-content: space-between;
 }
 
 th, td {
     padding: 8px;
-    flex: 1;
+    /* flex: 1; */
 }
 
 /* @media (max-width: 600px) {
