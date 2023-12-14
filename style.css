@@ -39,3 +39,10 @@ th, td {
     padding: 8px;
     /* display: flex; */
 }
+
+@media (max-width: 600px) {
+    th, td {
+        display: block;
+        width: 80%;
+    }
+}
