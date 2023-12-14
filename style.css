@@ -37,4 +37,5 @@ table {
 
 th, td {
     padding: 8px;
+    display: flex;
 }
