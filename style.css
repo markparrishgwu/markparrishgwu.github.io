@@ -6,7 +6,8 @@
 }
 
 #countdown-wrapper {
-    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
