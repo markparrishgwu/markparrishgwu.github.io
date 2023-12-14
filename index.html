@@ -13,6 +13,22 @@
             vertical-align: center;
         }
 
+        .timer {
+            font-size: 60px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        .header {
+            font-size: 45px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            vertical-align: center;
+        }
+
         body {
             display: flex;
             justify-content: center;
@@ -23,15 +39,10 @@
 
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 80%;
         }
 
         th, td {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 80px;
-            font-weight: bold;
-            text-align: center;
-            vertical-align: center;
             padding: 8px;
         }
     </style>
@@ -43,16 +54,16 @@
 
     <table>
         <tr>
-            <td id="countdown-days">Data 1</td>
-            <td id="countdown-hours">Data 2</td>
-            <td id="countdown-minutes">Data 3</td>
-            <td id="countdown-seconds">Data 4</td>
+            <td class="timer" id="countdown-days">Data 1</td>
+            <td class="timer" id="countdown-hours">Data 2</td>
+            <td class="timer" id="countdown-minutes">Data 3</td>
+            <td class="timer" id="countdown-seconds">Data 4</td>
         </tr>
         <tr>
-            <td>Days</td>
-            <td>Hours</td>
-            <td>Minutes</td>
-            <td>Seconds</td>
+            <td class="header">Days</td>
+            <td class="header">Hours</td>
+            <td class="header">Minutes</td>
+            <td class="header">Seconds</td>
         </tr>
     </table>
 
