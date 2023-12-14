@@ -5,6 +5,11 @@
     vertical-align: center;
 }
 
+#countdown-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+
 .timer {
     font-size: 60px;
     font-weight: bold;
@@ -46,9 +51,9 @@ th, td {
     /* flex: 1; */
 }
 
-/* @media (max-width: 600px) {
-    th, td {
-        display: block;
-        width: 80%;
+@media (max-width: 600px) {
+    #column-wrapper {
+        display: flex;
+        flex-direction: column;
     }
-} */
+}
