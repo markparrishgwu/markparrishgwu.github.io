@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Days Til ACRA</title>
+    <title>Days Til aCRA</title>
+    <style>
+        /* Optional: Add some basic styling to the countdown */
+        #countdown {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Hello, World!</h1>
     <p>This is a simple webpage template with the title "Days Til aCRA".</p>
+
+    <!-- Countdown to a specific date and time -->
+    <div id="countdown"></div>
+
+    <script>
+        // Set the target date and time for the countdown (format: year, month (0-based), day, hour, minute, second)
+        const targetDate = new Date(2023, 11, 31, 23, 59, 59);
+
+        // Function to update the countdown
+        function updateCountdown() {
+            const currentDate = new Date();
+            const timeDifference = targetDate - currentDate;
+
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        // Initial call to update the countdown
+        updateCountdown();
+
+        // Update the countdown every second
+        setInterval(updateCountdown, 1000);
+    </script>
 
 </body>
 </html>
