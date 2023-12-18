@@ -1,59 +1,87 @@
 #countdown {
     font-size: 100px;
     font-weight: bold;
-    text-align: center;
-    vertical-align: center;
 }
 
 #countdown-wrapper {
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-}
-
-.timer {
-    font-size: 60px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    vertical-align: center;
-}
-
-.header {
-    font-size: 45px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    vertical-align: center;
-}
-
-body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+   
+    padding-top: 0;
+}
+
+#header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 12%;
+    padding-top: 0;
+}
+
+.timer {
+    font-size: 500%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    font-size: 300%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    vertical-align: center;
+}
+
+img {
+    height: 100px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
     height: 100vh;
-    margin: 0;
-    background-color: #1454ba;
+    background-color:cadetblue;
 }
 
 table {
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
 }
 
 tr {
     /* display: flex;
     flex-wrap: wrap; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 th, td {
-    padding: 8px;
-    /* flex: 1; */
+    padding: 10px;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
-    #column-wrapper {
-        display: flex;
+    #header-wrapper {
+        margin-top: 5px;
+    }
+
+    #countdown-wrapper {
         flex-direction: column;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 80%;
+    }
+
+    .timer {
+        font-size: 400%;
+    }
+    
+    .header {
+        font-size: 300%;
     }
 }
